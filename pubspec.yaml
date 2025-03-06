@@ -20,7 +20,7 @@ dev_dependencies:
 
 
 inno_bundle:
-  id: ab887e5f0-4690-1e07-8efc-a12ea7711afb # <-- Put your app id here
+  id: 32241992-793a-4e5f-aee9-ffff78b119d5 # <-- Put your app id here
   publisher: YCY # Optional, but recommended.
   name: FRC Starting Position Viewer # 
   admin: auto
