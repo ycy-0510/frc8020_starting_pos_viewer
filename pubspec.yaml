@@ -26,7 +26,7 @@ inno_bundle:
   admin: auto
   languages:
     - english
-  installer_icon: images/64.ico
+  installer_icon: assets/icon/64.ico
 
 
 flutter:
