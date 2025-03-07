@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:form_ui/form_ui.dart';
+// ignore: implementation_imports
+import 'package:form_ui/src/theme.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,7 +13,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(body: MainBody()));
+    return MaterialApp(
+      theme: FormTheme.lightTheme,
+      darkTheme: FormTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      home: Scaffold(body: MainBody()),
+    );
   }
 }
 
@@ -40,7 +47,7 @@ class _MainBodyState extends State<MainBody> {
         continue;
       }
       final rowData = row.split(',');
-      String x = rowData[0], y = rowData[0];
+      String x = rowData[0], y = rowData[1];
       if (double.tryParse(x) != null && double.tryParse(y) != null) {
         positions.add(Offset(double.parse(x), double.parse(y)));
       }
